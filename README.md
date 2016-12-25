@@ -1,7 +1,8 @@
 
 # KittBot 3000
 
-A running SlackBot project for my team's channels at work.
+A running SlackBot project for my team's channels at work. It's inspired by K.I.T.T 3000
+from the hit 80s TV show [Knight Rider](https://en.wikipedia.org/wiki/Knight_Rider_(1982_TV_series))
 
 
 ## Keyword commands
