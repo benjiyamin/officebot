@@ -43,11 +43,14 @@ Current plugins and commands include:
     [Apple iTunes](https://itunes.apple.com/) API.
         * `random podcast` 
 * Random
-    - Choose a random team member
+    - Choose a random team member.
         * `random member`
         * `random person`
         * `random team member`
         * `random user`
+    - Flip a coin.
+        * `coin flip`
+        * `flip a coin`
 * Wikipedia
     - Retrieves some information from [Wikipedia](https://www.wikipedia.org/). (Extends Limbo).
         * `tell me about [query]` 

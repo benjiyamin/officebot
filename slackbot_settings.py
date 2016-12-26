@@ -2,9 +2,13 @@
 import os, yaml
 
 
-# API_TOKEN = os.environ.get('KITT_BOT_TOKEN')
 with open('config.yml') as f:
-    API_TOKEN = yaml.load(f)['token']
+    y = yaml.load(f)
+    API_TOKEN = y['token']
+    WEATHER_API_KEY = y['weather-key']
+
+
+os.environ['WEATHER_API_KEY'] = WEATHER_API_KEY
 
 
 DEFAULT_REPLY = "I'm sorry Dave, I'm afraid I can't do that."

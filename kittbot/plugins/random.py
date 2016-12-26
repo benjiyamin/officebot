@@ -17,3 +17,14 @@ def random_member(msg):
     user = random.choice(users)
     username = '<@'+ user['name'] +'>'
     msg.reply('Hmmmm.. I choose %s!' % (username))
+
+
+@respond_to('flip a coin', re.IGNORECASE)
+@respond_to('coin flip', re.IGNORECASE)
+def coin_flip(msg):
+    options = (
+        'heads',
+        'tails',
+    )
+    side = random.choice(options)
+    msg.reply("Hmmmm.. Looks like it's %s!" % (side))
