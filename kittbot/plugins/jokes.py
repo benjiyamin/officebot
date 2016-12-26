@@ -15,6 +15,7 @@ def chuck_norris(msg):
 
 @respond_to('make (.*) feel better', re.IGNORECASE)
 @respond_to('cheer (.*) up', re.IGNORECASE)
+@respond_to('cheer up (.*)', re.IGNORECASE)
 def chuck_norris(msg, username):
     response = request_dict('http://api.icndb.com/jokes/random?escape=javascript')
     if response['type'] == 'success':

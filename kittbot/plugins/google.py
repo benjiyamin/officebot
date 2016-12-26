@@ -9,6 +9,6 @@ from limbo.plugins import google as lg
 @respond_to('search (.*)', re.IGNORECASE)
 @respond_to('search for (.*)', re.IGNORECASE)
 @respond_to('look up (.*)', re.IGNORECASE)
-def google(msg, search):
-    result = lg.google(search)
+def google(msg, query):
+    result = lg.google(query)
     msg.reply('%s' % result)
