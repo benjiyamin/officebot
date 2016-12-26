@@ -16,7 +16,7 @@ def random_member(msg):
     users = response.body['members']
     user = random.choice(users)
     username = '<@'+ user['name'] +'>'
-    msg.reply('Hmmmm.. I choose %s!' % (username))
+    msg.send('Hmmmm.. I choose %s!' % (username))
 
 
 @respond_to('flip a coin', re.IGNORECASE)
@@ -27,4 +27,4 @@ def coin_flip(msg):
         'tails',
     )
     side = random.choice(options)
-    msg.reply("Hmmmm.. Looks like it's %s!" % (side))
+    msg.send("Looks like it's %s!" % (side))

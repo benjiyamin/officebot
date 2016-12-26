@@ -9,7 +9,7 @@ def request_dict(url):
     return requests.get(url).json()
 
 
-def simple_response(message, response):
+def simple_send(message, response):
     @respond_to(message, re.IGNORECASE)
-    def love(msg):
-        msg.reply(response)
+    def res(msg):
+        msg.send(response)

@@ -1,9 +1,11 @@
 
-# KittBot 2000
+# OfficeBot
 
-A running SlackBot project for my team's channels at work. It's inspired by K.I.T.T 2000
-from the hit 80s TV show [Knight Rider](https://en.wikipedia.org/wiki/Knight_Rider_(1982_TV_series)).
-Some base functions are extended from the [Limbo library](https://github.com/llimllib/limbo), as not to reinvent the wheel. 
+A running SlackBot project for my team's channels at work. I've used the
+[slackbot](https://github.com/lins05/slackbot) framework for some 
+structure. In addition, some base functions are extended from the 
+[Limbo library](https://github.com/llimllib/limbo), as not to reinvent 
+the wheel. 
 
 
 ## Keyword commands
@@ -16,10 +18,16 @@ Current plugins and commands include:
         * `calculate [expression]`
         * `solve [expression]`
 * General
-    - Show the available list of kittbot commands.
+    - Show the available list of officebot commands.
         * `commands`
         * `what can you do`
         * `what you can do`
+    - Show the bot's description. This should be defined in `config.yml` as `description`.
+        * `about yourself` 
+    - Show the bot's company. This should be defined in `config.yml` as `company`.
+        * `who do you work for` 
+    - Show the bot's description. This should be defined in `config.yml` as `name`.
+        * `your name` 
 * Google
     - Search for something and retrieve the top result. (Extends Limbo).
         * `google [query]` 
@@ -30,11 +38,13 @@ Current plugins and commands include:
     - Say a random Chuck Norris joke. Uses the 
     [The Chuck Norris Internet Database](http://api.icndb.com) API.
         * `chuck norris joke` 
-    - Say a random Chuck Norris joke, but with a team member's name instead.
+    - Say a random Chuck Norris joke, but with a team member's name 
+    instead.
         * `make [user] feel better`
         * `cheer [user] up`
         * `cheer up [user]`
-    - Say a Horatio Caine style one-liner. If no quote is defined, say a random one.
+    - Say a Horatio Caine style one-liner. If no quote is defined, say a 
+    random one.
         * `csi joke [quote 1] [quote 2]`
         * `horatio joke [quote 1] [quote 2]`
         * `horatio caine joke [quote 1] [quote 2]`
@@ -57,9 +67,8 @@ Current plugins and commands include:
         * `coin flip`
         * `flip a coin`
 * Wikipedia
-    - Retrieves some information from [Wikipedia](https://www.wikipedia.org/). (Extends Limbo).
-        * `tell me about [query]` 
-        * `tell us about [query]` 
+    - Retrieves some information from 
+    [Wikipedia](https://www.wikipedia.org/). (Extends Limbo).
         * `what do you know about [query]` 
         * `wiki [query]` 
         * `wikipedia [query]`
@@ -71,7 +80,7 @@ Current plugins and commands include:
 
 2. Create a local clone of your fork.
     
-        $ git clone https://github.com/YOUR-USERNAME/kittbot
+        $ git clone https://github.com/YOUR-USERNAME/officebot
 
 3. Set up a clean working environment, using virtualenv.
 
@@ -79,9 +88,15 @@ Current plugins and commands include:
         $ source venv/bin/activate
         $ pip install -r requirements/development.txt
       
-4. For the bot to work properly, a `config.yml` file must be created. You can get this from your Bot's API token from its page upon creation. Add the following line and format to `config.yml`.
+4. For the bot to work properly, a `config.yml` file must be created. 
+You can get this from your Bot's API token from its page upon creation. 
+Add the following line and format to `config.yml`.
 
-        token: 'YOUR-BOT-API-KEY'
+        api-key-bot-token: 'YOUR-BOT-API-KEY'
+
+5. In order to run office bot, execute the main script. 
+
+        `$ python run.py`.
 
 
 ## TODOs

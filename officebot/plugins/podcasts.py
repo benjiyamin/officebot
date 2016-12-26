@@ -4,7 +4,7 @@ import random
 
 from slackbot.bot import respond_to, listen_to
 
-from kittbot.plugins import request_dict
+from officebot.plugins import request_dict
 
 
 @respond_to('random podcast', re.IGNORECASE)
@@ -14,7 +14,7 @@ def random_podcast(msg):
         entries = response['feed']['entry']
         entry = random.choice(entries)
         title = entry['title']['label']
-        msg.reply('Have you heard of "%s"?' % (title))
+        msg.send('Have you heard of "%s"?' % (title))
 
 
 @listen_to('podcast', re.IGNORECASE)

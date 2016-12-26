@@ -10,4 +10,4 @@ from limbo.plugins import map as lm
 @respond_to('map (.*)', re.IGNORECASE)
 def google(msg, query):
     result = lm.makemap(query)
-    msg.reply('%s' % result)
+    msg.send('%s' % result)

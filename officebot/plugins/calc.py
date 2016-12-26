@@ -10,4 +10,4 @@ from limbo.plugins import calc as lc
 @respond_to('solve (.*)', re.IGNORECASE)
 def calculate(msg, query):
     result = lc.calc(query)
-    msg.reply('%s' % result)
+    msg.send('%s' % result)

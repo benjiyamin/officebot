@@ -3,14 +3,14 @@ import re, shlex, random
 
 from slackbot.bot import respond_to
 
-from kittbot.plugins import request_dict
+from officebot.plugins import request_dict
 
 
 @respond_to('chuck norris joke', re.IGNORECASE)
 def chuck_norris(msg):
     response = request_dict('http://api.icndb.com/jokes/random?escape=javascript')
     joke = response['value']['joke']
-    msg.reply(joke)
+    msg.send(joke)
 
 
 @respond_to('make (.*) feel better', re.IGNORECASE)
@@ -21,7 +21,7 @@ def chuck_norris(msg, username):
     if response['type'] == 'success':
         joke = response['value']['joke']
         joke = joke.replace('Chuck Norris', username)
-        msg.reply(joke)
+        msg.send(joke)
 
 
 RANDOM_LINES = (
@@ -48,4 +48,4 @@ def csi(msg, expr=None):
             set_up = command_list[0]
             punchline = command_list[1]
     response = '%s.. \n ( •__•)    ( •__•)>⌐■--■    (⌐■__■) \n ..*%s*' % (set_up, punchline)
-    msg.reply(str(response))
+    msg.send(str(response))

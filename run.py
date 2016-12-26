@@ -2,10 +2,10 @@
 from slackbot.bot import Bot
 from slacker import Slacker
 
-from slackbot_settings import ABOUT, API_TOKEN
+from slackbot_settings import DESCRIPTION, API_KEY_BOT_TOKEN
 
 
-slack_client = Slacker(API_TOKEN)
+slack_client = Slacker(API_KEY_BOT_TOKEN)
 
 
 def main():
@@ -14,6 +14,6 @@ def main():
 
 
 if __name__ == "__main__":
-    print(ABOUT)
+    print(DESCRIPTION)
     main()
 

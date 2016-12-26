@@ -4,20 +4,23 @@ import os, yaml
 
 with open('config.yml') as f:
     y = yaml.load(f)
-    API_TOKEN = y['token']
-    WEATHER_API_KEY = y['weather-key']
+    API_KEY_BOT_TOKEN = y['api-key-bot-token']
+    API_KEY_WEATHER = y['api-key-weather']
+    NAME = y['name']
+    DESCRIPTION = y['description']
+    COMPANY = y['company']
+    DEFAULT_REPLY = y['default-reply']
 
 
-os.environ['WEATHER_API_KEY'] = WEATHER_API_KEY
+# Need this for the Limbo weather plugin to work properly
+os.environ['WEATHER_API_KEY'] = API_KEY_WEATHER
 
 
-DEFAULT_REPLY = "I'm not sure what you mean.. Let me know if you need a list of available commands."
-
-
-ABOUT = 'I am the Knight Industries Two Thousand. You may call me "K.I.T.T."'
+# Need this for the Slackbot framework to work correctly
+API_TOKEN = API_KEY_BOT_TOKEN
 
 
 PLUGINS = [
     'slackbot.plugins',
-    'kittbot.plugins',
+    'officebot.plugins',
 ]
