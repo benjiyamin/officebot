@@ -14,6 +14,4 @@ def random_podcast(msg):
         entries = response['feed']['entry']
         entry = random.choice(entries)
         title = entry['title']['label']
-        # link = entry['link']['attributes']['href']
-        # msg.reply('Have you heard of the podcast "%s"?\n Check it out at %s' % (title, link))
         msg.reply('Have you heard of the podcast "%s"?' % (title))
