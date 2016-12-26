@@ -8,6 +8,7 @@ from officebot.plugins import request_dict
 
 @respond_to('chuck norris joke', re.IGNORECASE)
 def chuck_norris(msg):
+    msg.send('Hmm.. Let\'s see.. ')
     response = request_dict('http://api.icndb.com/jokes/random?escape=javascript')
     joke = response['value']['joke']
     msg.send(joke)
@@ -17,11 +18,11 @@ def chuck_norris(msg):
 @respond_to('cheer (.*) up', re.IGNORECASE)
 @respond_to('cheer up (.*)', re.IGNORECASE)
 def chuck_norris(msg, username):
+    msg.send('Hmm.. Let\'s see.. ')
     response = request_dict('http://api.icndb.com/jokes/random?escape=javascript')
-    if response['type'] == 'success':
-        joke = response['value']['joke']
-        joke = joke.replace('Chuck Norris', username)
-        msg.send(joke)
+    joke = response['value']['joke']
+    joke = joke.replace('Chuck Norris', username)
+    msg.send(joke)
 
 
 RANDOM_LINES = (

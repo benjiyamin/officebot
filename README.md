@@ -1,7 +1,8 @@
 
 # OfficeBot
 
-A running SlackBot project for my team's channels at work. I've used the
+A running SlackBot project for my team's channels at work. It's designed
+to provide basic everyday functions. I've used the
 [slackbot](https://github.com/lins05/slackbot) framework for some 
 structure. In addition, some base functions are extended from the 
 [Limbo library](https://github.com/llimllib/limbo), as not to reinvent 
@@ -56,7 +57,7 @@ Current plugins and commands include:
 * Podcasts
     - Retrieves the name of a Random podcast from the iTunes Top 100. Uses the 
     [Apple iTunes](https://itunes.apple.com/) API.
-        * `random podcast` 
+        * `podcast` 
 * Random
     - Choose a random team member.
         * `random member`
