@@ -11,7 +11,7 @@ with open('config.yml') as f:
 os.environ['WEATHER_API_KEY'] = WEATHER_API_KEY
 
 
-DEFAULT_REPLY = "I'm sorry Dave, I'm afraid I can't do that."
+DEFAULT_REPLY = "I'm not sure what you mean.. Let me know if you need a list of available commands."
 
 
 ABOUT = 'I am the Knight Industries Two Thousand. You may call me "K.I.T.T."'

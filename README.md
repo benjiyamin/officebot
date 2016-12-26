@@ -15,6 +15,11 @@ Current plugins and commands include:
         * `calc [expression]`
         * `calculate [expression]`
         * `solve [expression]`
+* General
+    - Show the available list of kittbot commands.
+        * `commands`
+        * `what can you do`
+        * `what you can do`
 * Google
     - Search for something and retrieve the top result. (Extends Limbo).
         * `google [query]` 
