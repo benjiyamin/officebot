@@ -21,20 +21,20 @@ Current plugins and commands include:
 * General
     - Show the available list of officebot commands.
         * `commands`
+        * `help`
         * `what can you do`
         * `what you can do`
     - Show the bot's description. This should be defined in `config.yml` as `description`.
         * `about yourself` 
     - Show the bot's company. This should be defined in `config.yml` as `company`.
         * `who do you work for` 
-    - Show the bot's description. This should be defined in `config.yml` as `name`.
+    - Show the bot's name. This should be defined in `config.yml` as `name`.
         * `your name` 
 * Google
     - Search for something and retrieve the top result. (Extends Limbo).
         * `google [query]` 
         * `look up [query]` 
         * `search [query]` 
-        * `search for [query]` 
 * Jokes
     - Say a random Chuck Norris joke. Uses the 
     [The Chuck Norris Internet Database](http://api.icndb.com) API.
