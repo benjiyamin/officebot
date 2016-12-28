@@ -23,6 +23,7 @@ def jarvis_cranberry(msg):
 # Bot Info
 simple_send('about yourself', DESCRIPTION)
 simple_send('who do you work for', 'I work for ' + COMPANY)
+simple_send('your job?', 'I work for ' + COMPANY)
 simple_send('your name', 'My name is ' + NAME)
 simple_send('who are you', 'My name is ' + NAME)
 
