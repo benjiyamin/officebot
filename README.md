@@ -28,8 +28,10 @@ Current plugins and commands include:
         * `about yourself` 
     - Show the bot's company. This should be defined in `config.yml` as `company`.
         * `who do you work for` 
+        * `your job?` 
     - Show the bot's name. This should be defined in `config.yml` as `name`.
         * `your name` 
+        * `who are you` 
 * Google
     - Search for something and retrieve the top result. (Extends Limbo).
         * `google [query]` 
@@ -58,6 +60,12 @@ Current plugins and commands include:
     - Retrieves the name of a Random podcast from the iTunes Top 100. Uses the 
     [Apple iTunes](https://itunes.apple.com/) API.
         * `podcast` 
+* Quotes
+    - Recite a DJ Khaled quote.
+        * `motivate` 
+        * `motivation` 
+        * `motivational` 
+        * `khaled` 
 * Random
     - Choose a random team member.
         * `random member`
