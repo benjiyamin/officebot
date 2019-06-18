@@ -3,7 +3,7 @@ certifi==2015.4.28
 html5lib==0.9999999
 limbo==5.0.3
 pyfiglet==0.7.4
-PyYAML==3.12
+PyYAML==5.1
 requests==2.20.0
 six==1.10.0
 slackbot==0.4.1
